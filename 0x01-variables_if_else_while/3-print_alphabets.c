@@ -7,6 +7,15 @@
 
 int main(void)
 {
-	putchar("abcdefghijklmopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ");
+	char alp[52]("abcdefghijklmopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ");
+	
+	int i;
+
+	for (i = 0; i < 52; i++)
+	{ 
+		putchar(alp[i]);
+	}
+	putchar('\n');
+
 	return (0);
 }
