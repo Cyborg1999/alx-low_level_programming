@@ -6,14 +6,14 @@
  */
 int main(void)
 {
-	int i,j;
+	int i, j;
 
 	i = 48;
 	j = 48;
 
 	while (j < 58)
 	{
-		i =48;
+		i = 48;
 
 		while (i < 58)
 		{
@@ -35,4 +35,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
- 
