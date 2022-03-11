@@ -14,7 +14,7 @@ int main(void)
 
 	for (y = 0; y < 10; y++)
 	{
-		putchar(" %i,", y);
+		putchar(y, ", ");
 	}
 	putchar('\n');
 	return (0);
