@@ -14,7 +14,7 @@ int main(void)
 	for (i = 0; i < 1000; i++)
 	{
 		j = i / 100;
-		k = (i/10) %10;
+		k = (i / 10) % 10;
 		l = i % 10;
 
 
@@ -29,7 +29,6 @@ int main(void)
 				putchar(44);
 				putchar(32);
 			}
-		
 		}
 	}
 	putchar('\n');
