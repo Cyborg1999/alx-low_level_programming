@@ -20,7 +20,7 @@ int main(void)
 
 		if (j < k && k < l)
 		{
-			purchar(j + '0');
+			putchar(j + '0');
 			putchar(k + '0');
 			putchar(l + '0');
 
