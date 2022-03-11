@@ -11,9 +11,9 @@ int main(void)
 
 	int y;
 
-	for (i = 0; i < 10; i++)
+	for (y = 0; y < 10; y++)
 	{
-		printf("%d", i);
+		printf("%d", y);
 	}
 	putchar('\n');
 	return (0);
