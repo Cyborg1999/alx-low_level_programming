@@ -5,9 +5,15 @@
  */
 void print_to_98(int n)
 {
-	for (n = 0; n < 99; n++)
+	for (n = 0; n < 98; n++)
 	{
-		_putchar(',');
-		_putchar(n);
+		if (n < 98)
+			_putchar(',');
+			_putchar(n);
+		else if ( n == 98)
+			_putchar(n);
+		else
+			while (n > 98)
+				n--;
 	}
 }
