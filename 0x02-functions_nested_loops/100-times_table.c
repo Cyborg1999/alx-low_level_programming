@@ -17,7 +17,6 @@ void print_times_table(int n)
 			for (col = 0; col <= n; col++)
 			{
 				sum = (row * col);
-
 				if (col == 0)
 				{
 					_putchar('0' + sum);
@@ -26,7 +25,6 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					_putchar(' ');
-
 					if (sum <= 9)
 					{
 						_putchar(' ');
@@ -42,7 +40,7 @@ void print_times_table(int n)
 					else if (sum >= 100)
 					{
 						_putchar('0' + (sum / 100));
-						_putchar('0' + ((sum % 100) % 10));
+						_putchar('0' + ((sum % 10) % 10));
 						_putchar('0' + (sum % 10));
 					}
 				}
