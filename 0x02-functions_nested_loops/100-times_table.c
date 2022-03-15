@@ -43,7 +43,7 @@ void print_times_table(int n)
 					else if ( sum >= 100)
 					{
 						_putchar('0' + (sum / 100));
-						_putchar('0' + ((sum % 100) % 10);
+						_putchar('0' + ((sum % 100) % 10));
 						_putchar('0' + (sum % 10));
 					}
 				}
