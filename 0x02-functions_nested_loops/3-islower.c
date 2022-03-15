@@ -1,5 +1,5 @@
 #include "main.h"
-#include <ctype.h>
+
 /**
  * islower - function to find if a character is lowercase
  *
