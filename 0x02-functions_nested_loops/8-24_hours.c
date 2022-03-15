@@ -1,4 +1,4 @@
-#inculde "main.h"
+#include "main.h"
 /**
  * jack_bauer - print the minutes of the day
  *
