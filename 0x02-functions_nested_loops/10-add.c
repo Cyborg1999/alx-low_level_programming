@@ -7,7 +7,7 @@
  *
  * Return: sum
  */
-int main(int i, int n)
+int add(int i, int n)
 {
 	return (i + n);
 }
