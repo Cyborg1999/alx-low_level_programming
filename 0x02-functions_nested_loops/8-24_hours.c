@@ -20,5 +20,5 @@ void jack_bauer(void)
 			_putchar('0' + (mns % 10));
 			_putchar('\n');
 		}
-	} 
+	}
 }
