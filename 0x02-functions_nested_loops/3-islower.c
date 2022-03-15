@@ -5,17 +5,18 @@
  *
  * Return: Always 0 (Success).
  */
-void _islower(void)
+int _islower(int c)
 {
 	int i;
 
 	if (int i > 96 && i < 123)
 	{
-		_putchar(1);
+		return (1);
 	}
 	else
 	{
-		_putchar(0);
+		return (0);
 	}
+	_putchar('\n');
 }
 
