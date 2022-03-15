@@ -2,7 +2,7 @@
 
 /**
  * _islower - function to find if a character is lowercase
- * 
+ *
  * @c: The character in ASCII code
  *
  * Return: 1 for lowercase  character. 0 for the rest.
