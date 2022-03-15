@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success).
  */
-void islower(void)
+void _islower(void)
 {
 	int i;
 
