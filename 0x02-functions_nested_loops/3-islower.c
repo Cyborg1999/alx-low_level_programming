@@ -5,11 +5,11 @@
  *
  * Return: Always 0 (Success).
  */
-int _islower(int i)
+int _islower(int c)
 {
 	int i;
 
-	if (int i > 96 && i < 123)
+	if (int c > 96 && c < 123)
 	{
 		return (1);
 	}
