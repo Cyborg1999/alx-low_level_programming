@@ -6,19 +6,17 @@
  */
 char *leet(char *s)
 {
-	int i, ii;
-	char s1[] = "aeotl";
-	char s1[] = "AEOTL";
-	char s2[] = "43071";
+	int i;
+	int j;
+	char l[] = "ol_ea__t";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (ii = 0; ii < 5; ii++)
+		for (j = 0; s[i] != '\0'; j++)
 		{
-			if (s[i] == s1[ii] || s[i] == s1[ii])
+			if (s[i] == l[j] || s[i] == (l[j] - 32))
 			{
-				s[i] = s2[ii];
-				break;
+				s[i] = j + '0';
 			}
 		}
 	}
