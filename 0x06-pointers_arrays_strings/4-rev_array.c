@@ -7,7 +7,7 @@
  * @n: number of elements of the array.
  * Return: no return
  */
-void reserve_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i, j, temp;
 
