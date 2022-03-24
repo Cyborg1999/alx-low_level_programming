@@ -5,16 +5,16 @@
  * @s: input string
  * Return: the pointer to dest
  */
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
 	int i;
 
-	for (i = 0, s[i] != '\0'; i++)
+	for (i = 0, str[i] != '\0'; i++)
 	{
-		if (s[i] <= 'z' && s[i] >= 'a')
+		if (str[i] <= 'z' && str[i] >= 'a')
 		{
-			s[i] -= 32;
+			str[i] -= 32;
 		}
 	}
-	return (s);
+	return (str);
 }
