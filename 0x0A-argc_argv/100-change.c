@@ -5,7 +5,7 @@
  * @s: string to check
  * Return : 0 or 1
  */
-int isIntegr(conts char *s)
+int isInteger(const char *s)
 {
 	int i = 0;
 	while (s[i] != '\0')
