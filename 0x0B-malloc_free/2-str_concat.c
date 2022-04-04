@@ -25,25 +25,28 @@ int _strlen(char *s)
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int l1, l2;
-	 char *conc, *tmp;
+	char *conc, *tmp;
 
-	 if (!s1)
+	if (!s1)
 		 s1 = "";
-	 else
+	else
 		 l1 = _strlen(s1);
 
-	 if (!s2)
+	if (!s2)
 		 s2 = "";
-	 else
+	else
 		 l2 = _strlen(s2);
 	 conc = malloc(l1 + l2 + 1);
-	 if (!conc)
+	if (!conc)
 		 return (0);
+
 	 tmp = conc;
-	 while (*s1)
+
+	while (*s1)
 		 *tmp++ = *s1++;
-	 while ((*tmp++ = *s2++))
+
+	while ((*tmp++ = *s2++))
 		 ;
 
-	 return (conc);
+	return (conc);
 }
