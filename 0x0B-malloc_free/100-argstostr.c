@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * _strlen - length of string
+ * _strlen - length of a string
  * @s: input char
  * Return: length of a string
  */
+
 int _strlen(char *s)
 {
 	int l = 0;
@@ -18,10 +19,11 @@ int _strlen(char *s)
 
 /**
  * argstostr - concat
- * @ac: count 
+ * @ac: count
  * @av: vector
  * Return: string
  */
+
 char *argstostr(int ac, char **av)
 {
 	int i, j, k;
@@ -43,14 +45,14 @@ char *argstostr(int ac, char **av)
 
 	if (!p)
 	{
-	return (NULL);
+		return (NULL);
 	}
 
 	for (i = 0; i < ac; i++)
 	{
 		len = _strlen(av[i]);
 
-		for (j = 0;j < len; j++, k++)
+		for (j = 0; j < len; j++, k++)
 		{
 			p[k] = av[i][j];
 		}
