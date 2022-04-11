@@ -16,6 +16,5 @@ struct dog
 };
 
 typedef struct dog dog_t;
- 
 
 #endif
