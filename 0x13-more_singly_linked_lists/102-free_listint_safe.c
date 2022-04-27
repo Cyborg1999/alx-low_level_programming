@@ -1,38 +1,33 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - frees a linked list
- * @h: pointer to the first node in the linked list
- *
- * Return: number of elements in the freed list
+ * free_listint_safe - prints the elements of a linked list of structures
+ * @head: the pointer to the pointer to the first element of the list
+ * Return: the number of nodes
  */
-size_t free_listint_safe(listint_t **h)
+size_t free_listint_safe(listint_t **head)
 {
-	size_t len = 0;
-	int diff;
+	int pdiff, count;
 	listint_t *temp;
 
-	if (!h || !*h)
+	if (head == NULL || *head == NULL)
 		return (0);
-
-	while (*h)
+	for (count = 0; *head; count++)
 	{
-		diff = *h - (*h)->next;
-		if (diff > 0)
+		pdiff = *head - (*head)->next;
+		if (pdiff > 0)
 		{
-			temp = (*h)->next;
-			*h = temp;
-			len++;
+			temp = *head;
+			*head = (*head)->next;
+			free(temp);
 		}
 		else
 		{
-			*h = NULL;
-			len++;
+			free(*head);
+			count++;
 			break;
 		}
 	}
-
-	*h = NULL;
-
-	return (len);
+	*head = NULL;
+	return (count);
 }
