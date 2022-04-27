@@ -5,7 +5,7 @@
  * @head: the pointer to the pointer to the first element of the list
  * Return: the number of nodes
  */
-size_t free_listint_safe(listint_t **head)
+size_t free_listint_safe(listint_t **h)
 {
 	int pdiff, count;
 	listint_t *temp;
