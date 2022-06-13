@@ -17,3 +17,7 @@ By the end of the project I should be able to:
 | -------- | ----------- |
 | `libdynamic.so` |  Create the dynamic library libdynamic |
 | `1-create_dynamic_lib.sh` |  Create a script that creates a dynamic library called `liball.so` from all the `.c` files that are in the current directory. |
+| `100-operations.so` | Dynamic library that contains mathematical functio
+ns |
+| `101-make_me_win.sh` | Shell script that injects a C program in order to hack `gm` executable file |
+
