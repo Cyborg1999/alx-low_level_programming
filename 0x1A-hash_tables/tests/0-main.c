@@ -10,9 +10,9 @@
  */
 int main(void)
 {
-    hash_node_t *ht;
+	hash_node_t *ht;
 
-    ht =hash_table_create(1024);
-    printf("%p\n", (void *)ht);
-    return (EXIT_SUCCESS);
+	ht = hash_table_create(1024);
+	printf("%p\n", (void *)ht);
+	return (EXIT_SUCCESS);
 }
